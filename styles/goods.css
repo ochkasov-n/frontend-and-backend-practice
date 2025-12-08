@@ -1,0 +1,92 @@
+/*1.grid и flexbox
+2.почему у меня страница растянута,у тебя настройка bacground на главном, а не дочернем,про диск
+3.по вложенности*/
+.page-container1{
+    max-width: 1200px;
+    margin:0 auto;
+    background: white;
+    min-height: 100vh;
+    box-shadow:0 0 30px rgba(0,0,0,0.1);
+    display: grid;
+    grid-template-rows: auto auto 1fr auto;
+    grid-template-areas: "header" "nav" "main " "footer";
+}
+.good-section{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.section-title{
+    text-align: center;
+    color:#2c3e50;
+    font-weight: 300;
+    font-size: 28px;
+    margin-bottom: 30px;
+}
+.section-desc{
+    text-align: center;
+    color: #7f8c8d;;
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+.good-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(280px,1fr));
+    gap: 30px;
+    margin-top: 30px;
+}
+.good-container{
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    text-align: center;
+    transition: all 0.3s ease;
+    box-shadow:0 5px 20px rgba(0,0,0,0.08) ;
+    margin: 20px;
+}
+.good-container:hover{
+    transform: translateY(-5px);
+}
+.good-image{
+    height: 250px;
+    width: 200px;
+    border-radius: 10px;
+    object-fit: cover;
+    border:3px solid #f8f9fa;
+    margin-bottom: 20px;
+}
+.good-info{
+    padding: 0 10px 20px 10px;
+}
+.good-title{
+    color: #2c3e50;
+    font-weight: 600;
+    font-size: 18px;
+    margin: 10px 0;
+}
+.good-desc{
+    color: #7f8c8d;
+    font-size: 14px;
+    line-height: 1.5;
+    margin: 10px 0;
+    min-height: 60px;
+}
+.good-price{
+    color:#e74c3c;
+    font-weight: 700;
+    font-size:20px;
+    margin: 5px 0;
+}
+.buy-button{
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border: none;
+    padding: 20px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: 600;
+    width: 100%;
+    transition: all 0.3s ease;
+}
+.buy-button:hover{
+    transform: translateY(-5px);
+}

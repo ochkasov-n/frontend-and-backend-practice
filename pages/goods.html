@@ -1,35 +1,66 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Товары</title>
     <link rel="stylesheet" href="../styles/styles.css">
+    <link rel="stylesheet" href="../styles/goods.css">
 </head>
 <body>
-    <header>Хэдер</header>
-    <nav>
-        <ul>
-            <li><a href="../index.html">Главная</a></li>
-            <li><a href="news.html">Новости</a></li>
-            <li><a href="practices.html">Практики</a></li>
-            <li><a href="goods.html">Товары</a></li>
-            <li><a href="contacts.html">Контакты</a></li>
-        </ul>
-    </nav>
-    <main>
-        <img src="../images/6778909425.jpg" alt="Плюшевый крокодил" height="200" width="250">
-        <div>Плюшевый крокодил</div>
-        <div>2000 рублей</div>
+    <div class = "page-container1">
+        <header class = "header"><h1>Наши товары</h1></header>
 
-        <img src="../images/5588.970.jpg" alt="Сыр" height="200" width="250">
-        <div>Мышка с сыром</div>
-        <div>Бесплатно</div>
+         <nav class = "nav" id="menu">
+            <ul class = "nav-list">
+                <li class = "nav-item"><a class = "nav-link" href="../index.html">Главная</a></li>
+                <li class = "nav-item"><a class = "nav-link" href="news.html" >Новости</a></li>
+                <li class = "nav-item"><a class = "nav-link" href="practices.html">Практики</a></li>
+                <li class = "nav-item"><a class = "nav-link" href="goods.html">Товары</a></li>
+                <li class = "nav-item"><a class = "nav-link" href="contacts.html">Контакты</a></li>
+            </ul>
+        </nav>
 
-        <img src="../images/images.jpg" alt="Гантеля" height="200" width="250">
-        <div>Гантеля 10 кг</div>
-        <div>2000 рублей</div>
-    </main>
-    <footer>Футер</footer>
+        <main class = "content">
+            <section class = "good-section">
+                
+                <h2 class ="section-title">Каталог товаров</h2>
+                <p class ="section-desc">Мы предлагаем широкий ассортимент качественных товаров по доступным ценам</p>
+                
+                <div class ="good-grid">
+                    <article class = "good-container">
+                        <img class = "good-image"src="../images/6778909425.jpg" alt="Плюшевый крокодил">
+                        <div class = "good-info">
+                            <h3 class = "good-title">Плюшевый крокодил</h3>
+                            <p class = "good-desc">Мощный ноутбук для работы, учебы и развлечений с современными характеристиками</p>
+                            <p class ="good-price">2000 рублей</p>
+                            <button class="buy-button" type="button">В корзину</button>
+                        </div>
+                    </article>
+
+                    <article class = "good-container">
+                        <img class = "good-image" src="../images/5588.970.jpg" alt="Сыр">
+                        <div class="good-info">
+                            <h3 class ="good-title">Мышка с сыром</h3>
+                            <p class = "good-desc">Инновационный смартфон с лучшей камерой и производительностью на рынке</p>
+                            <p class ="good-price">5000 рублей</p>
+                            <button class="buy-button" type="button">В корзину</button>
+                        </div>
+                    </article>
+                    
+                    <article class ="good-container">
+                        <img class = "good-image" src="../images/images.jpg" alt="Гантеля">
+                        <div class = "good-info">
+                            <h3 class = "good-title">Гантеля 10 кг</h3>
+                            <p class = "good-desc">Качественные наушники с шумоподавлением и длительным временем работы</p>
+                            <p class = "good-price">3000 рублей</p>
+                            <button class="buy-button" type="button">В корзину</button>
+                        </div>
+                    </article>
+                </div>
+            </section>
+        </main>
+        <footer class="footer"><p>Интернет-магазин</p></footer>
+    <div>
 </body>
 </html>
