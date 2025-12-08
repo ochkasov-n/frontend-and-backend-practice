@@ -1,35 +1,66 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Новости</title>
-    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="../styles/styles.css">
+    <link rel="stylesheet" href="../styles/news.css">
 </head>
 <body>
-    <header>Хэдер</header>
-    <nav>
-        <ul>
-            <li><a href="../index.html">Главная</a></li>
-            <li><a href="news.html">Новости</a></li>
-            <li><a href="practices.html">Практики</a></li>
-            <li><a href="goods.html">Товары</a></li>
-            <li><a href="contacts.html">Контакты</a></li>
-        </ul>
-    </nav>
-    <main>
-        <h2>Юань всё дешевеет</h2>
-        <p>Юань пробил очередной уровень и усреднился на 10,82 рублях</p>
-        <div>03.12.2025 ,Мао цзинь</div>
+    <div class = "page-container">
+        <header class = "header"><h1>Новости</h1></header>
 
-        <h2>Всё в ваших руках</h2>
-        <p>В Бурунди прошли очередные выборы президента...</p>
-        <div>01.12.2025,парламент Бурунди</div>
+        <nav class = "nav" id="menu">
+                <ul class = "nav-list">
+                    <li class = "nav-item"><a class = "nav-link" href="../index.html">Главная</a></li>
+                    <li class = "nav-item"><a class = "nav-link" href="news.html" >Новости</a></li>
+                    <li class = "nav-item"><a class = "nav-link" href="practices.html">Практики</a></li>
+                    <li class = "nav-item"><a class = "nav-link" href="goods.html">Товары</a></li>
+                    <li class = "nav-item"><a class = "nav-link" href="contacts.html">Контакты</a></li>
+                </ul>
+            </nav>
 
-        <h2>Бумага все ещё может</h2>
-        <p>В Гренландии обнаружен рост любителей газет и бумажной литературы</p>
-        <div>18.11.2025,научный Центр Гренландии</div>
-    </main>
-    <footer></footer>
+        <main class = 'content'>
+
+            <section class = "news-container">
+                <h2 class ="section-title">Последние новости</h2>
+                <article class = "news-block">
+                    <header class = "news-header">
+                        <h3 class = "news-title">Юань всё дешевеет</h2>
+                        <p class = "news-date">02.12.2025 12:00 | Автор: Мао Цзинь</p>
+                    </header>
+                    <div class="news-content">
+                        <p class = "news-text">Текст новости 1. Мы рады сообщить о запуске нового проекта, который изменит подход к веб-разработке. Проект включает в себя современные технологии и инновационные решения.</p>
+                        <a class = "news-link" href="#">Читать далее...</a>
+                    </div>
+                </article>
+
+                <article class = "news-block">
+                    <header class = "news-header">
+                        <h3 class = "news-title">Бумага все ещё может</h2>
+                        <p class = "news-date">06.12.2025 13:00 | Автор: Научный центр Гренландии</p>
+                    </header>
+                    <div class="news-content">
+                        <p class = "news-text">Текст новости 2. Представляем вашему вниманию обновленный дизайн нашего портала. Мы улучшили пользовательский опыт и добавили новые функции для вашего удобства.</p>
+                        <a class = "news-link" href="#">Читать далее...</a>
+                    </div>
+                </article>
+
+                <article class = "news-block">
+                    <header class = "news-header">
+                        <h3 class = "news-title">Всё в ваших руках</h2>
+                        <p class = "news-date">03.12.2025 14:00 | Автор: Парламент Бурунди</p>
+                    </header>
+                    <div class="news-content">
+                        <p class = "news-text">Текст новости 3. Расширяем функциональность платформы. Теперь доступны новые инструменты для разработки и тестирования веб-приложений.</p>
+                        <a class = "news-link" href="#">Читать далее...</a>
+                    </div>
+                </article>
+            </section>
+
+        </main>
+        <footer class="footer">Новостной портал</footer>
+    </div>
 </body>
 </html>
